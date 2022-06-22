@@ -1,5 +1,4 @@
-from pprint import pprint
-from getData import get_data, get_users_nieghbors
+from getData import get_data
 from buildGraph import build_graph
 from visualize import visualize
 
