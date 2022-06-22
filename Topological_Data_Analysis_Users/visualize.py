@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def visualize(graph):
-    print(graph.nodes)
-    nx.draw(graph, with_labels=True, font_weight="bold")
+    nx.draw(graph, with_labels=False, font_weight="bold")
     ax = plt.gca()
     ax.margins(0.20)
     plt.axis("off")
