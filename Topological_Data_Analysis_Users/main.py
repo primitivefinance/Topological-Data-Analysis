@@ -6,7 +6,7 @@ import networkx as nx
 
 
 def main():
-    users = get_data()
+    users = get_data()  # TODO: filter out the sybil wallets
     print(users.head())
     graph = build_graph(users.head())
     visualize(graph)

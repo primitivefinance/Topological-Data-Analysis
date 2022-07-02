@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import os
 from dotenv import load_dotenv
+from filter import get_unique_users
 
 
 def get_data():
@@ -13,7 +14,7 @@ def get_data():
     )
     a = r.json()
     df = pd.DataFrame(a["result"])
-    users = df["from"]
+    users = get_unique_users(df)
     return users
 
 
